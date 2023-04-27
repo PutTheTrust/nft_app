@@ -27,7 +27,7 @@ class HotNftCard extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Container(
-              padding: const EdgeInsets.all(15),
+              padding: const EdgeInsets.all(10),
               margin: const EdgeInsets.only(bottom: 45, left: 10, right: 10),
               decoration: BoxDecoration(
                 color: Colors.white,
