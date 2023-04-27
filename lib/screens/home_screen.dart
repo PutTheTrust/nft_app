@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:nft_app/widgets/input_field.dart';
+import 'package:nft_app/widgets/nft_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -49,7 +48,35 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            const InputField()
+            const InputField(),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: const [
+                Text(
+                  "Popular",
+                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
+                ),
+                Text(
+                  "View all",
+                  style: TextStyle(fontSize: 16),
+                )
+              ],
+            ),
+            SizedBox(
+              height: 260,
+              // color: Colors.green,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: const [
+                  NftCard(),
+                  NftCard(),
+                ],
+              ),
+            )
           ],
         ),
       ),
