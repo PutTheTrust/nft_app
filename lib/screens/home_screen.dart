@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:nft_app/widgets/input_field.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -9,7 +10,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 30),
+        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 30),
         child: Column(
           children: [
             Row(
@@ -42,9 +43,13 @@ class HomeScreen extends StatelessWidget {
                     Icons.notifications,
                     color: Colors.green,
                   ),
-                )
+                ),
               ],
             ),
+            const SizedBox(
+              height: 20,
+            ),
+            const InputField()
           ],
         ),
       ),
