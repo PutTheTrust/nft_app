@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nft_app/screens/home_screen.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({Key? key}) : super(key: key);
@@ -11,7 +12,7 @@ class _BottomNavState extends State<BottomNavBar> {
   int _selectedIndex = 0;
 
   static final List<Widget> _widgetOptions = <Widget>[
-    const Text("Home"),
+    const HomeScreen(),
     // const Text("Popular"),
     const Text("Favourites"),
     const Text("Saved"),
