@@ -36,16 +36,26 @@ class _BottomNavState extends State<BottomNavBar> {
         elevation: 10,
         showSelectedLabels: false,
         showUnselectedLabels: false,
-        selectedItemColor: Colors.blueGrey,
+        selectedItemColor: Colors.green,
         type: BottomNavigationBarType.fixed,
-        unselectedItemColor: const Color(0xFF526480),
+        unselectedItemColor: const Color(0xFFABABAB),
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.house), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.grid_view), label: "Cards"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.bookmark), label: "Bookmark"),
+              icon: Icon(Icons.house_outlined),
+              label: "Home",
+              activeIcon: Icon(Icons.house)),
           BottomNavigationBarItem(
-              icon: Icon(Icons.person_rounded), label: "Person"),
+              icon: Icon(Icons.grid_view_outlined),
+              label: "Cards",
+              activeIcon: Icon(Icons.grid_view_sharp)),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.bookmark_outline),
+              label: "Bookmark",
+              activeIcon: Icon(Icons.bookmark)),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.person_outline),
+              label: "Person",
+              activeIcon: Icon(Icons.person)),
         ],
       ),
     );
